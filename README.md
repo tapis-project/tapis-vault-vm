@@ -77,5 +77,5 @@ root token that can be used to safeguard the original root token.
     }
 
 2. Export the original root token to VAULT_TOKEN and issue: 
-    curl -X POST -s -H "X-Vault-Token: $VAULT_TOKEN" --data @tapisroot.json https://tapis-vault-stage.tacc.utexas.edu:8200/v1/auth/token/create | jq
+    curl -X POST -s -H "X-Vault-Token: $VAULT_TOKEN" --data @tapisroot.json https://tapis-vault:8200/v1/auth/token/create | jq
  
